@@ -21,7 +21,7 @@ admin-insecure-mode: true
 
 # Connections
 debug-connections: true
-invite: true
+connections-invite: true
 invite-multi-use: true
 auto-accept-invites: true
 auto-accept-requests: true
