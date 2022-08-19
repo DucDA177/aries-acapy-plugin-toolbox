@@ -8,12 +8,12 @@ services:
     volumes:
       - ./configs:/home/indy/configs:ro,z
     environment:
-      ACAPY_ENDPOINT: "[http://${HOST_IP:-localhost}:3000,ws://${HOST_IP:-localhost}:3000]"
+      ACAPY_ENDPOINT: "[http://40.76.184.54:3004,ws://40.76.184.54:3004]"
       # Modify for more log output
       ACAPY_TOOLBOX_LOG_LEVEL: WARNING
     ports:
-      - "3001:3001"
-      - "3000:3000"
+      - "3005:3005"
+      - "3004:3004"
     command: start --arg-file ./configs/mediator.yml
     extra_hosts:
       - "localhost:host-gateway"
