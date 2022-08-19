@@ -6,8 +6,8 @@ plugin:
     - acapy_plugin_toolbox
 
 # General
-label: Mindy Mediator
-endpoint: http://localhost:3004
+label: Blab Mediator
+endpoint: http://40.76.184.54:3004
 inbound-transport:
   - [acapy_plugin_toolbox.http_ws, 0.0.0.0, 3004]
 outbound-transport: http
