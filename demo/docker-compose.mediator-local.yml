@@ -1,11 +1,12 @@
 version: "3"
 services:
-  agent-alice:
+  blab-mediator:
     image: acapy-toolbox
     build:
       context: ..
       dockerfile: ./docker/Dockerfile
     volumes:
+      - ./acapy-endpoint.sh:/acapy-endpoint.sh:ro,z
       - ./configs:/home/indy/configs:ro,z
     environment:
       ACAPY_ENDPOINT: "[http://40.76.184.54:3004,ws://40.76.184.54:3004]"
@@ -14,6 +15,6 @@ services:
     ports:
       - "3005:3005"
       - "3004:3004"
+    entrypoint: >
+      /bin/sh -c '/acapy-endpoint.sh aca-py "$$@"' --
     command: start --arg-file ./configs/mediator.yml
-    extra_hosts:
-      - "localhost:host-gateway"
