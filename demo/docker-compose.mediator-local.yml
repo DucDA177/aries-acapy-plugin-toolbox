@@ -9,7 +9,7 @@ services:
     volumes:
       - ./configs:/home/indy/configs:ro,z
     environment:
-      ACAPY_ENDPOINT: "[http://40.76.184.54:3004,ws://40.76.184.54:3004]"
+      ACAPY_ENDPOINT: "[https://mediator.blabx.online,wss://mediator.blabx.online]"
       # Modify for more log output
       ACAPY_TOOLBOX_LOG_LEVEL: WARNING
     ports:

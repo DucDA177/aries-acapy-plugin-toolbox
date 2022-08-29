@@ -7,7 +7,7 @@ plugin:
 
 # General
 label: Blab Mediator
-endpoint: http://40.76.184.54:3004
+endpoint: https://mediator.blabx.online
 inbound-transport:
   - [acapy_plugin_toolbox.http_ws, 0.0.0.0, 3004]
 outbound-transport: 
