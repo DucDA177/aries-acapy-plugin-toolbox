@@ -40,5 +40,5 @@ wallet-name: BlabMediatorName
 wallet-key: BlabMediatorKey
 wallet-type: indy
 wallet-storage-type: postgres_storage
-wallet-storage-config: "{\"url\":\"40.76.184.54:5432\",\"wallet_scheme\":\"MultiWalletSingleTable\"}"
+wallet-storage-config: "{\"url\":\"blab.postgres.database.azure.com:5432\",\"wallet_scheme\":\"MultiWalletSingleTable\"}"
 wallet-storage-creds: "{\"account\":\"blab\",\"password\":\"blab1234\",\"admin_account\":\"blab\",\"admin_password\":\"blab1234\"}"
